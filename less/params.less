@@ -1,0 +1,27 @@
+@robFolder: './fonts/Roboto';
+@colorText: #002b41;
+@robBlack: 'RobBlack';
+@robLight:'RobLight', ;
+@robMedium: 'RobMedium';
+@robBold: 'RobBold';
+
+.fontParams( @fontSize:16px, @fontFamily:@robBlack, @fontColor:@colorText,){
+    color: @fontColor;
+    font: @fontSize @fontFamily;
+}
+
+.positionFlex(@justifyContent: flex-start, @alignItems: center, @display:flex){
+    display: @display;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+}
+
+
+.font(@fontFamily; @fontFolder; @fontName) {
+    @font-face{
+        font-family: '@{fontFamily}';
+        src: url('@{fontFolder}/@{fontName}.ttf');
+
+    }
+
+}

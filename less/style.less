@@ -1,0 +1,169 @@
+@import 'params';
+
+.font(@robLight, @robFolder, 'Roboto-Light');
+.font(@robMedium, @robFolder, 'Roboto-Medium');
+.font(@robBold, @robFolder, 'Roboto-Bold');
+.font(@robBlack, @robFolder, 'Roboto-Black');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+	background-image: url('imgs/bg2.jpg');
+	opacity: 0.5;
+	width: 1870px;
+	height:9470px;
+
+	li{
+		list-style: none;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	header, .block, footer{
+		width: 100%;
+
+	}
+
+	header{
+		background-image: url('imgs/logo.jpg');
+		background-color: rgba(0, 127, 255, .33);
+	    background-color: rgba(42, 255, 0, .33);
+
+		height: 1152px;
+		position: relative;
+		display: flex;
+		
+
+		.navigation{
+
+			background-color: red;
+			position: absolute;
+			width: 100%;
+			min-height: 90px;
+			.positionFlex();
+
+			.logo{
+				margin: 0 0 5px 24.8%;
+			}
+
+			nav{
+
+				margin:2px 0 0 55px;
+				ul{
+
+				    .positionFlex();
+
+				    li{
+				    	a{
+				    		
+				    		.fontParams(@fontColor: #2a94fb, @fontFamily: @robLight);
+				    		&::after{
+				    			content: '|';
+				    			font-size: 16px;
+				    			color: #2a94fb;
+				    		};
+
+				    		&:hover{
+				    			color: #fff;
+				    		}
+				    	}
+
+				    	.nav_home::after{
+				    		margin-left: 16px;
+				    	}
+
+				    	.nav_about{
+				    		padding: 0 0 0 10px;
+
+				    		&::after{
+				    			margin-left: 14px;
+				    		}
+				    	}
+
+				    	.nav_solution,
+				    	.nav_news{
+				    		padding-left: 11px;
+
+				    		&::after{
+				    			margin-left: 12px;
+				    		}
+				    	}
+
+				    	.nav_demo,
+				    	.nav_support,
+				    	.nav_contact
+				    	{
+				    		padding-left: 12px;
+
+				    		&::after{
+				    			margin-left: 12px;
+				    		}
+				    	}
+
+				    	
+				    }
+			    }
+			}
+		
+		}
+
+		.pulse{
+			position: absolute;
+			bottom: 28px;
+			width: 75.2%;
+			height: 44.9%;
+		}
+
+		.header_title{
+			
+			box-sizing: border-box;
+			align-self: center;
+			margin: 168px 0 0 24.8%;
+			width:943px;
+			height: 231px;
+			padding: 5px 0 30px 41px;
+			background-color: rgba(0, 127, 255, .75);
+			background-color: rgba(42, 255, 0, .75);
+
+			h3{
+				.fontParams(72px, @robBold, #fff);
+				margin-bottom: -3px;
+			}
+			span{
+				.fontParams(52px, @robLight, #fff);
+			}
+
+
+		}
+	}
+
+	.block{
+		.positionFlex(center);
+		flex-direction: column;
+
+		h2{
+			.fontParams(60px, @robLight, #000);
+		}
+
+		.about_text{
+			.fontParams(28px, @robBold, #fff);
+			width: 944px;
+			height: 240px;
+			background-color: #3e9eff;
+		}
+
+
+
+		
+	}
+
+	#about{
+
+	}
+}

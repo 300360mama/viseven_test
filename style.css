@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'RobLight';
+  src: url('./fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'RobMedium';
+  src: url('./fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'RobBold';
+  src: url('./fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'RobBlack';
+  src: url('./fonts/Roboto/Roboto-Black.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('imgs/bg2.jpg');
+  opacity: 0.5;
+  width: 1870px;
+  height: 9470px;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body header,
+body .block,
+body footer {
+  width: 100%;
+}
+body header {
+  background-image: url('imgs/logo.jpg');
+  background-color: rgba(0, 127, 255, 0.33);
+  background-color: rgba(42, 255, 0, 0.33);
+  height: 1152px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header .navigation {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .navigation .logo {
+  margin: 0 0 5px 24.8%;
+}
+body header .navigation nav {
+  margin: 2px 0 0 55px;
+}
+body header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .navigation nav ul li a {
+  color: #2a94fb;
+  font: 16px 'RobLight';
+}
+body header .navigation nav ul li a::after {
+  content: '|';
+  font-size: 16px;
+  color: #2a94fb;
+}
+body header .navigation nav ul li a:hover {
+  color: #fff;
+}
+body header .navigation nav ul li .nav_home::after {
+  margin-left: 16px;
+}
+body header .navigation nav ul li .nav_about {
+  padding: 0 0 0 10px;
+}
+body header .navigation nav ul li .nav_about::after {
+  margin-left: 14px;
+}
+body header .navigation nav ul li .nav_solution,
+body header .navigation nav ul li .nav_news {
+  padding-left: 11px;
+}
+body header .navigation nav ul li .nav_solution::after,
+body header .navigation nav ul li .nav_news::after {
+  margin-left: 12px;
+}
+body header .navigation nav ul li .nav_demo,
+body header .navigation nav ul li .nav_support,
+body header .navigation nav ul li .nav_contact {
+  padding-left: 12px;
+}
+body header .navigation nav ul li .nav_demo::after,
+body header .navigation nav ul li .nav_support::after,
+body header .navigation nav ul li .nav_contact::after {
+  margin-left: 12px;
+}
+body header .pulse {
+  position: absolute;
+  bottom: 28px;
+  width: 75.2%;
+  height: 44.9%;
+}
+body header .header_title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 168px 0 0 24.8%;
+  width: 943px;
+  height: 231px;
+  padding: 5px 0 30px 41px;
+  background-color: rgba(0, 127, 255, 0.75);
+  background-color: rgba(42, 255, 0, 0.75);
+}
+body header .header_title h3 {
+  color: #fff;
+  font: 72px 'RobBold';
+  margin-bottom: -3px;
+}
+body header .header_title span {
+  color: #fff;
+  font: 52px 'RobLight';
+}
+body .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .block h2 {
+  color: #000;
+  font: 60px 'RobLight';
+}
+body .block .about_text {
+  color: #fff;
+  font: 28px 'RobBold';
+  width: 944px;
+  height: 240px;
+  background-color: #3e9eff;
+}
