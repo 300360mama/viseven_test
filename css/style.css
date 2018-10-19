@@ -305,7 +305,6 @@ body #solution .solution_icon .solution_wrapper .solution_block {
 }
 body #solution .solution_icon .solution_wrapper .solution_block:hover {
   background-color: #3e9eff;
-  border: 3px red solid;
 }
 body #solution .solution_icon .solution_wrapper .solution_block img {
   -webkit-transform: rotate(-45deg);
