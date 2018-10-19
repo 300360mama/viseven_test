@@ -25,7 +25,7 @@ body {
   height: 9470px;
 }
 body li {
-  list-style: none;
+  qlist-style: none;
 }
 body a {
   text-decoration: none;
@@ -295,6 +295,7 @@ body #solution .solution_icon .solution_wrapper {
 body #solution .solution_icon .solution_wrapper .solution_block {
   width: 210.7px;
   height: 210.7px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,41 +307,123 @@ body #solution .solution_icon .solution_wrapper .solution_block {
 body #solution .solution_icon .solution_wrapper .solution_block:hover {
   background-color: #3e9eff;
 }
-body #solution .solution_icon .solution_wrapper .solution_block img {
+body #solution .solution_icon .solution_wrapper .solution_block .img_logo {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
 }
 body #solution .solution_icon .solution_wrapper .solution_block span {
+  position: absolute;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   color: #444444;
   font: 26px 'RobLight';
+  background-color: #fff;
+  padding: 7px 48px 7px 48px;
 }
 body #solution .solution_icon .wrapper1 {
-  top: 163px;
-  left: 9px;
+  top: 161px;
+  left: 12px;
+}
+body #solution .solution_icon .wrapper1 .solution_block .img_logo {
+  top: 51px;
+  left: 47px;
+  background-image: url(./imgs/solution/first.png);
+}
+body #solution .solution_icon .wrapper1 .solution_block span {
+  bottom: 20px;
+  right: -39px;
+}
+body #solution .solution_icon .wrapper1:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/first_active.png);
 }
 body #solution .solution_icon .wrapper2 {
   top: 162px;
   left: 349px;
 }
+body #solution .solution_icon .wrapper2 .solution_block .img_logo {
+  top: 51px;
+  left: 51px;
+  background-image: url(./imgs/solution/mobile.png);
+}
+body #solution .solution_icon .wrapper2 .solution_block span {
+  bottom: 25px;
+  right: -42px;
+}
+body #solution .solution_icon .wrapper2:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/mobile_active.png);
+}
 body #solution .solution_icon .wrapper3 {
-  top: 161px;
-  left: 690px;
+  top: 162px;
+  left: 686px;
+}
+body #solution .solution_icon .wrapper3 .solution_block .img_logo {
+  top: 43px;
+  left: 51px;
+  background-image: url(./imgs/solution/blue_setting.png);
+}
+body #solution .solution_icon .wrapper3 .solution_block span {
+  bottom: 26px;
+  right: -44px;
+}
+body #solution .solution_icon .wrapper3:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/blue_setting_active.png);
 }
 body #solution .solution_icon .wrapper4 {
-  top: 332px;
-  left: 179px;
+  top: 330px;
+  left: 181px;
+}
+body #solution .solution_icon .wrapper4 .solution_block .img_logo {
+  top: 49px;
+  left: 35px;
+  background-image: url(./imgs/solution/arrow.png);
+}
+body #solution .solution_icon .wrapper4 .solution_block span {
+  bottom: 16px;
+  right: -46px;
+  padding: 11px 48px 8px 48px;
+}
+body #solution .solution_icon .wrapper4:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/arrow_active.png);
 }
 body #solution .solution_icon .wrapper5 {
-  top: 331px;
-  left: 520px;
+  top: 330px;
+  left: 518px;
+}
+body #solution .solution_icon .wrapper5 .solution_block .img_logo {
+  top: 46px;
+  left: 47px;
+  background-image: url(./imgs/solution/setting.png);
+}
+body #solution .solution_icon .wrapper5 .solution_block span {
+  bottom: 23px;
+  right: -50px;
+  padding: 11px 48px 6px 48px;
+}
+body #solution .solution_icon .wrapper5:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/setting_active.png);
 }
 body #solution .solution_icon .wrapper6 {
-  top: 500px;
-  left: 350px;
+  top: 497px;
+  left: 349px;
+}
+body #solution .solution_icon .wrapper6 .solution_block .img_logo {
+  top: 51px;
+  left: 52px;
+  background-image: url(./imgs/solution/key.png);
+}
+body #solution .solution_icon .wrapper6 .solution_block span {
+  bottom: 17px;
+  right: -49px;
+  padding: 11px 48px 6px 48px;
+}
+body #solution .solution_icon .wrapper6:hover .solution_block .img_logo {
+  background-image: url(./imgs/solution/key_active.png);
 }
 body #news {
   background-color: #f6f8fb;
