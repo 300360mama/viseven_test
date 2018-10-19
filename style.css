@@ -25,7 +25,7 @@ body {
   height: 9470px;
 }
 body li {
-  list-style: none;
+  qlist-style: none;
 }
 body a {
   text-decoration: none;
@@ -305,6 +305,7 @@ body #solution .solution_icon .solution_wrapper .solution_block {
 }
 body #solution .solution_icon .solution_wrapper .solution_block:hover {
   background-color: #3e9eff;
+  border: 3px red solid;
 }
 body #solution .solution_icon .solution_wrapper .solution_block img {
   -webkit-transform: rotate(-45deg);
@@ -333,6 +334,7 @@ body #solution .solution_icon .wrapper3 {
 body #solution .solution_icon .wrapper4 {
   top: 332px;
   left: 179px;
+  border: none;
 }
 body #solution .solution_icon .wrapper5 {
   top: 331px;
