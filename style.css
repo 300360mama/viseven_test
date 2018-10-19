@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'RobLight';
+  src: url('./fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'RobMedium';
+  src: url('./fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'RobBold';
+  src: url('./fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'RobBlack';
+  src: url('./fonts/Roboto/Roboto-Black.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('imgs/bg1.jpg');
+  opacity: 0.5;
+  width: 1870px;
+  height: 9470px;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body header,
+body .block,
+body footer {
+  width: 100%;
+}
+body header {
+  background-image: url('imgs/header/logo.jpg');
+  background-color: rgba(0, 127, 255, 0.33);
+  background-color: rgba(42, 255, 0, 0.33);
+  height: 1152px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header .navigation {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .navigation .logo {
+  margin: 0 0 5px 24.8%;
+}
+body header .navigation nav {
+  margin: 2px 0 0 55px;
+}
+body header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .navigation nav ul li a {
+  color: #2a94fb;
+  font: 16px 'RobLight';
+}
+body header .navigation nav ul li a::after {
+  content: '|';
+  font-size: 16px;
+  color: #2a94fb;
+}
+body header .navigation nav ul li a:hover {
+  color: #fff;
+}
+body header .navigation nav ul li .nav_home::after {
+  margin-left: 16px;
+}
+body header .navigation nav ul li .nav_about {
+  padding: 0 0 0 10px;
+}
+body header .navigation nav ul li .nav_about::after {
+  margin-left: 14px;
+}
+body header .navigation nav ul li .nav_solution,
+body header .navigation nav ul li .nav_news {
+  padding-left: 11px;
+}
+body header .navigation nav ul li .nav_solution::after,
+body header .navigation nav ul li .nav_news::after {
+  margin-left: 12px;
+}
+body header .navigation nav ul li .nav_demo,
+body header .navigation nav ul li .nav_support,
+body header .navigation nav ul li .nav_contact {
+  padding-left: 12px;
+}
+body header .navigation nav ul li .nav_demo::after,
+body header .navigation nav ul li .nav_support::after,
+body header .navigation nav ul li .nav_contact::after {
+  margin-left: 12px;
+}
+body header .pulse {
+  position: absolute;
+  bottom: 28px;
+  width: 75.2%;
+  height: 44.9%;
+}
+body header .header_title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 168px 0 0 24.8%;
+  width: 943px;
+  height: 231px;
+  padding: 5px 0 30px 41px;
+  background-color: rgba(0, 127, 255, 0.75);
+  background-color: rgba(42, 255, 0, 0.75);
+}
+body header .header_title h3 {
+  color: #fff;
+  font: 72px 'RobBold';
+  margin-bottom: -3px;
+}
+body header .header_title span {
+  color: #fff;
+  font: 52px 'RobLight';
+}
+body .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .block h2 {
+  color: #000;
+  font: 60px 'RobLight';
+  letter-spacing: 0.3px;
+  margin: 0 0 0 17px;
+}
+body .block .pulse {
+  margin: 34px 0 46px 0;
+}
+body .block .block_text {
+  color: red;
+  font: 28px 'RobBold';
+  width: 944px;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body #about {
+  padding: 67px 0 0 0;
+}
+body #about .block_text {
+  padding: 0 20px 0 20px;
+  margin: 0 0 87px 0;
+  height: 242px;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #about .block_text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #about .block_text .line1 {
+  border-bottom: 1px solid #fff;
+  padding: 6px 23px 0 0;
+}
+body #about .block_text .line2 {
+  padding: 10px 17px 7px 0;
+}
+body #about .about_gadget {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body #about .about_gadget .gadget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body #about .about_gadget .gadget .gadget_info {
+  color: #000000;
+  font: 30px 'RobLight';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 36px;
+}
+body #about .about_gadget .line {
+  border-bottom: 1px solid #dcdcdc;
+}
+body #about .about_gadget .gadget_one img {
+  margin: 34px 0 46px 0;
+}
+body #about .about_gadget .gadget_one .gadget_info {
+  padding: 54px 0 0 46px;
+}
+body #about .about_gadget .gadget_two {
+  padding: 75px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body #about .about_gadget .gadget_two img {
+  margin: -42px 53px 17px 0;
+}
+body #about .about_gadget .gadget_two .gadget_info {
+  max-width: 50%;
+  padding: 60px 0 0 78px;
+}
+body #about .about_gadget .gadget_three {
+  padding: 34px 0 29px 0;
+}
+body #about .about_gadget .gadget_three .gadget_info {
+  padding: 89px  0 0 92px;
+  letter-spacing: 0.2px;
+}
+body #solution {
+  background-color: #f6f8fb;
+  background-color: red;
+  padding: 72px 0 0 0;
+}
+body #solution .pulse {
+  margin-bottom: 39px;
+}
+body #solution .block_text {
+  height: 209px;
+  padding: 69px 58px 0 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+body #solution .solution_icon {
+  width: 940px;
+  height: 883px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+body #solution .solution_icon .solution_wrapper {
+  padding: 13.2px;
+  border: 1px solid #e2e4e7;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+body #solution .solution_icon .solution_wrapper .solution_block {
+  width: 210.7px;
+  height: 210.7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #e2e4e7;
+}
+body #solution .solution_icon .solution_wrapper .solution_block:hover {
+  background-color: #3e9eff;
+}
+body #solution .solution_icon .solution_wrapper .solution_block img {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+body #solution .solution_icon .solution_wrapper .solution_block span {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: #444444;
+  font: 26px 'RobLight';
+}
+body #solution .solution_icon .wrapper1 {
+  top: 163px;
+  left: 9px;
+}
+body #solution .solution_icon .wrapper2 {
+  top: 162px;
+  left: 349px;
+}
+body #solution .solution_icon .wrapper3 {
+  top: 161px;
+  left: 690px;
+}
+body #solution .solution_icon .wrapper4 {
+  top: 332px;
+  left: 179px;
+}
+body #solution .solution_icon .wrapper5 {
+  top: 331px;
+  left: 520px;
+}
+body #solution .solution_icon .wrapper6 {
+  top: 500px;
+  left: 350px;
+}
+body #news {
+  background-color: #f6f8fb;
+  background-color: red;
+}
+body #support {
+  background-image: url('imgs/support/support_bg.jpg');
+}
+body #contact {
+  background-image: url('imgs/contact/contact_bg.jpg');
+}
